@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.mapboxgl-control-container{
+  display: none;
+}
+
+.mapbox-directions-route-summary{
+  display: flex;
+  gap: 16px;
+}
+
+.mapbox-directions-route-summary>h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+.mapbox-directions-step-maneuver{
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mapboxgl-ctrl-geocoder{
+  display: flex;
+  fill: white;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.mapboxgl-ctrl-geocoder input{
+  background: transparent;
+  padding: 4px;
+}
+
+.suggestions-wrapper{
+  position: absolute;
+  max-width: 300px;
+  left: 110%;
+  max-height: 400px;
+  
+  background-color: #111111;
+  border-radius: 12px;
+  overflow: scroll;
+}
+
+.suggestions{
+  padding: 8px 16px;
+  width: 300px;
+}
+
+.suggestions li{
+  margin-bottom: 8px;
+}
+
+.mapboxgl-ctrl-geocoder--pin-right{
+  position: absolute;
+    right: 36px;
+}
+
+.mapboxgl-ctrl-geocoder--icon-loading{
+  display: none;
+}
