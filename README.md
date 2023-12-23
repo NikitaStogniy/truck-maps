@@ -1,5 +1,7 @@
 # Nest.js Project with Firebase and Mapbox
 
+<img src="previrew.png" alt="Preview" width="100%">
+
 ## Project Description
 
 This project is built on Nest.js, a popular framework for creating scalable web applications using TypeScript. It utilizes Firebase as the database for storing information about drivers and routes, and Mapbox for displaying paths.
