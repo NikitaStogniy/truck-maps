@@ -1,6 +1,6 @@
 # Nest.js Project with Firebase and Mapbox
 
-<img src="previrew.png" alt="Preview" width="100%">
+<img src="previrew.jpeg" alt="Preview" width="100%">
 
 ## Project Description
 
